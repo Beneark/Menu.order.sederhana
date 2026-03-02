@@ -1,0 +1,59 @@
+menu = input("Menu cemilan/minuman: ").lower()
+
+if menu == 'cemilan':
+    print('kentang goreng')
+    print('cireng')
+    cemilan = input("pilih cemilan: ").lower()
+    jumlah_pesanan = int(input("jumlah pesanan: "))
+
+    if cemilan == 'kentang goreng':
+        ukuran = input('Ukuran L/S: ').lower()
+
+        if ukuran == 'l':
+          print('Harga = 10000')
+        elif ukuran == 's':
+          print('Harga = 6000')
+        else:
+            print('Ukuran tidak tersedia')
+
+    elif cemilan =='cireng':
+        ukuran = input('Ukuran L/S: ').lower()
+
+        if ukuran == 'l':
+            print('Harga = 8000')
+        elif ukuran == 's':
+            print('Harga = 4000')
+        else:
+            print('Ukuran tidak tersedia')
+    else:
+        print('cemilan tidak tersedia')
+
+elif menu == 'minuman' :
+    print('coffee')
+    print('mineral water')
+    minuman = input("pilih minuman: ").lower()
+    jumlah_pesanan = int(input("jumlah pesanan: "))
+
+    if minuman == 'coffee':
+        ukuran = input('Ukuran L/S: ').lower()
+
+        if ukuran == 'l':
+          print('Harga = 7000')
+        elif ukuran == 's':
+          print('Harga = 5000')
+        else:
+            print('Ukuran tidak tersedia')
+
+    elif minuman =='mineral water':
+        ukuran = input('Ukuran L/S: ').lower()
+
+        if ukuran == 'l':
+            print('Harga = 6500')
+        elif ukuran == 's':
+            print('Harga = 3000')
+        else:
+            print('Ukuran tidak tersedia')
+    else:
+        print('cemilan tidak tersedia')
+else:
+    print('menu tidak valid')
